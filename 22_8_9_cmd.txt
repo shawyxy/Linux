@@ -1,0 +1,369 @@
+Script started on Tue 09 Aug 2022 11:37:43 PM CST
+[?1034hbash-4.2$ exit
+exit-bash-4.2$ ls
+clash  Code  Git  test
+-bash-4.2$ cd test
+-bash-4.2$ cd test\
+> 
+-bash: cd: test: No such file or directory
+-bash-4.2$ cd test/
+-bash: cd: test/: No such file or directory
+-bash-4.2$ ls
+a.out  d1  test.cpp
+-bash-4.2$ cd ..
+-bash-4.2$ ls
+clash  Code  Git  test
+-bash-4.2$ cd test/
+-bash-4.2$ ls
+a.out  d1  test.cpp
+-bash-4.2$ ls
+a.out  d1  test.cpp
+-bash-4.2$ cd ..
+-bash-4.2$ ls
+clash  Code  Git  test
+-bash-4.2$ cd test
+-bash-4.2$ ls
+a.out  d1  test.cpp
+-bash-4.2$ cd ..
+-bash-4.2$ ls
+clash  Code  Git  test
+-bash-4.2$ cd test\
+> 
+-bash-4.2$ ls
+a.out  d1  test.cpp
+-bash-4.2$ ccd ..
+-bash: ccd: command not found
+-bash-4.2$ cd ..
+-bash-4.2$ ls
+clash  Code  Git  test
+-bash-4.2$ cd test/
+-bash-4.2$ ls
+a.out  d1  test.cpp
+-bash-4.2$ PWD
+-bash: PWD: command not found
+-bash-4.2$ pwd
+/home/xy/test
+-bash-4.2$ cd /home/xy/test
+-bash-4.2$ ls
+a.out  d1  test.cpp
+-bash-4.2$ ls
+a.out  d1  test.cpp
+-bash-4.2$ cd ..
+-bash-4.2$ ls
+clash  Code  Git  test
+-bash-4.2$ cd test
+-bash-4.2$ ls
+a.out  d1  test.cpp
+-bash-4.2$ rm test.cpp 
+-bash-4.2$ ls
+a.out  d1
+-bash-4.2$ rm a.out 
+-bash-4.2$ ls
+d1
+-bash-4.2$ ls
+d1
+-bash-4.2$ pwd
+/home/xy/test
+-bash-4.2$ ls
+d1
+-bash-4.2$ touch test.txt
+-bash-4.2$ ls
+d1  test.txt
+-bash-4.2$ ls
+d1  test.txt
+-bash-4.2$ mkdir d2
+-bash-4.2$ ls
+d1  d2  test.txt
+-bash-4.2$ mkdir d2/d3
+-bash-4.2$ ls
+d1  d2  test.txt
+-bash-4.2$ cd d2
+-bash-4.2$ ls
+d3
+-bash-4.2$ rm -rf d3
+-bash-4.2$ ls
+-bash-4.2$ cd ..
+-bash-4.2$ ls
+d1  d2  test.txt
+-bash-4.2$ mkdir d3/d4
+mkdir: cannot create directory ‘d3/d4’: No such file or directory
+-bash-4.2$ ls
+d1  d2  test.txt
+-bash-4.2$ rm d2
+rm: cannot remove ‘d2’: Is a directory
+-bash-4.2$ ls
+d1  d2  test.txt
+-bash-4.2$ rm /d2
+rm: cannot remove ‘/d2’: No such file or directory
+-bash-4.2$ rm \d2
+rm: cannot remove ‘d2’: Is a directory
+-bash-4.2$ ls
+d1  d2  test.txt
+-bash-4.2$ rm d2/
+rm: cannot remove ‘d2/’: Is a directory
+-bash-4.2$ rm d2
+rm: cannot remove ‘d2’: Is a directory
+-bash-4.2$ rmdir d2
+-bash-4.2$ ls
+d1  test.txt
+-bash-4.2$ cd d1
+-bash-4.2$ ls
+d2
+-bash-4.2$ cd ..
+-bash-4.2$ rmdir -p d1
+rmdir: failed to remove ‘d1’: Directory not empty
+-bash-4.2$ 
+-bash-4.2$ rmdir -p d1/d2
+rmdir: failed to remove ‘d1/d2’: Directory not empty
+-bash-4.2$ cd d1/d2
+-bash-4.2$ ls
+d3
+-bash-4.2$ cd d3
+-bash-4.2$ ls
+-bash-4.2$ cd ..
+-bash-4.2$ ls
+d3
+-bash-4.2$ rmdir d3/
+-bash-4.2$ ls
+-bash-4.2$ cd..
+-bash: cd..: command not found
+-bash-4.2$ cd .
+-bash-4.2$ cd ..
+-bash-4.2$ ls
+d2
+-bash-4.2$ rmdir -p d1/d2
+rmdir: failed to remove ‘d1/d2’: No such file or directory
+-bash-4.2$ cd ..
+-bash-4.2$ ls
+d1  test.txt
+-bash-4.2$ rmdir -p d1/d2
+-bash-4.2$ ls
+test.txt
+-bash-4.2$ las
+-bash: las: command not found
+-bash-4.2$ ls
+test.txt
+-bash-4.2$ pwd
+/home/xy/test
+-bash-4.2$ touch -p d1/d2/d3
+touch: invalid option -- 'p'
+Try 'touch --help' for more information.
+-bash-4.2$ mkdir -p d1/d2/d3
+-bash-4.2$ ls
+d1  test.txt
+-bash-4.2$ cd d1
+-bash-4.2$ ls
+d2
+-bash-4.2$ cd ..
+-bash-4.2$ ls
+d1  test.txt
+-bash-4.2$ tree d1
+d1
+`-- d2
+    `-- d3
+
+2 directories, 0 files
+-bash-4.2$ ls
+d1  test.txt
+-bash-4.2$ tree d1
+d1
+`-- d2
+    `-- d3
+
+2 directories, 0 files
+-bash-4.2$ rm test.txt
+-bash-4.2$ ls
+d1
+-bash-4.2$ rm d1 
+rm: cannot remove ‘d1’: Is a directory
+-bash-4.2$ rm -r d1
+-bash-4.2$ ls
+-bash-4.2$ yum -y install tree
+Loaded plugins: fastestmirror, langpacks
+Repository epel is listed more than once in the configuration
+You need to be root to perform this command.
+-bash-4.2$ sudo yum -y install tree
+[sudo] password for xy: 
+Loaded plugins: fastestmirror, langpacks
+Repository epel is listed more than once in the configuration
+Loading mirror speeds from cached hostfile
+ * base: mirrors.aliyun.com
+ * extras: mirrors.aliyun.com
+ * updates: mirrors.aliyun.com
+base                                                                       | 3.6 kB  00:00:00     
+epel                                                                       | 4.7 kB  00:00:00     
+extras                                                                     | 2.9 kB  00:00:00     
+updates                                                                    | 2.9 kB  00:00:00     
+Package tree-1.6.0-10.el7.x86_64 already installed and latest version
+Nothing to do
+-bash-4.2$ man sleep
+-bash-4.2$ man sleep
+-bash-4.2$ 
+-bash-4.2$ man ls
+-bash-4.2$ man 3 sleep
+No manual entry for sleep in section 3
+-bash-4.2$ 
+-bash-4.2$ man 3 sleep
+No manual entry for sleep in section 3
+-bash-4.2$ man 3 sleep
+No manual entry for sleep in section 3
+-bash-4.2$ ls
+-bash-4.2$ pwd
+/home/xy/test
+-bash-4.2$ cd ..
+-bash-4.2$ ls
+clash  Code  Git  test
+-bash-4.2$ cd Code
+-bash-4.2$ ls
+7_14_test.cpp  CppCode
+-bash-4.2$ rm 7_14_test.cpp 
+-bash-4.2$ ls
+CppCode
+-bash-4.2$ touch test.txt
+-bash-4.2$ ls
+CppCode  test.txt
+-bash-4.2$ pwd
+/home/xy/Code
+-bash-4.2$ ls
+CppCode  test.txt
+-bash-4.2$ cp test.txt /home/xy/test
+-bash-4.2$ ls
+CppCode  test.txt
+-bash-4.2$ cd ..
+-bash-4.2$ cd /home/xy/test
+-bash-4.2$ ls
+test.txt
+-bash-4.2$ cd /home/xy/test
+-bash-4.2$ ls
+test.txt
+-bash-4.2$ cd ..
+-bash-4.2$ ls
+clash  Code  Git  test
+-bash-4.2$ cd CODE
+-bash: cd: CODE: No such file or directory
+-bash-4.2$ cd Code
+-bash-4.2$ ls
+CppCode  test.txt
+-bash-4.2$ cp /home/xy/test test1.txt
+cp: omitting directory ‘/home/xy/test’
+-bash-4.2$ ls
+CppCode  test.txt
+-bash-4.2$ cp test.txt /home/xy/test test1.txt
+cp: target ‘test1.txt’ is not a directory
+-bash-4.2$ cp test.txt /home/xy/test test1
+cp: target ‘test1’ is not a directory
+-bash-4.2$ ls
+CppCode  test.txt
+-bash-4.2$ pwd
+/home/xy/Code
+-bash-4.2$ mkdir d1
+-bash-4.2$ ls
+CppCode  d1  test.txt
+-bash-4.2$ cp -rf ../
+cp: missing destination file operand after ‘../’
+Try 'cp --help' for more information.
+-bash-4.2$ cp -rf d1 ../
+-bash-4.2$ ls ../
+clash  Code  d1  Git  test
+-bash-4.2$ tree ../
+../
+|-- clash
+|   |-- clash
+|   `-- nohup.out
+|-- Code
+|   |-- CppCode
+|   |-- d1
+|   `-- test.txt
+|-- d1
+|-- Git
+|   `-- linux
+|       |-- 22_8_8_cmd.txt
+|       |-- LICENSE
+|       |-- README.md
+|       `-- test.txt
+`-- test
+    `-- test.txt
+
+8 directories, 8 files
+-bash-4.2$ ls
+CppCode  d1  test.txt
+-bash-4.2$ mv test.txt ../
+-bash-4.2$ ls ../
+\clash  Code  d1  Git  test  test.txt
+-bash-4.2$ ls ../
+clash  Code  d1  Git  test  test.txt
+-bash-4.2$ ls
+CppCode  d1
+-bash-4.2$ ls
+CppCode  d1
+-bash-4.2$ cd d1
+-bash-4.2$ ls
+-bash-4.2$ cd ..
+-bash-4.2$ cd .
+-bash-4.2$ cd ..
+-bash-4.2$ ls
+clash  Code  d1  Git  test  test.txt
+-bash-4.2$ mv test.txt test1.txt
+-bash-4.2$ ls
+clash  Code  d1  Git  test  test1.txt
+-bash-4.2$ -bash-4.2$ ls
+-bash: -bash-4.2$: command not found
+-bash-4.2$ clash  Code  d1  Git  test  test.txt
+-bash: clash: command not found
+-bash-4.2$ -bash-4.2$ mv test.txt test1.txt
+-bash: -bash-4.2$: command not found
+-bash-4.2$ -bash-4.2$ ls
+-bash: -bash-4.2$: command not found
+-bash-4.2$ clash  Code  d1  Git  test  test1.txt
+-bash: clash: command not found
+-bash-4.2$ ls
+clash  Code  d1  Git  test  test1.txt
+-bash-4.2$ ls
+clash  Code  d1  Git  test  test1.txt
+-bash-4.2$ vim test
+test/      test1.txt  
+-bash-4.2$ vim test
+test/      test1.txt  
+-bash-4.2$ vim test1.txt 
+-bash-4.2$ ls
+clash  Code  d1  Git  test  test1.txt
+-bash-4.2$ cat test1.txt 
+#include <stdio.h>
+int main()
+{
+  pritf("hello cat\n");
+  return 0;
+}
+-bash-4.2$ tac -n test1.txt 
+tac: invalid option -- 'n'
+Try 'tac --help' for more information.
+-bash-4.2$ tac -n test1.txt ^C
+-bash-4.2$ ls
+clash  Code  d1  Git  test  test1.txt
+-bash-4.2$ tac -n test1.txt 
+tac: invalid option -- 'n'
+Try 'tac --help' for more information.
+-bash-4.2$ tac test1.txt 
+}
+  return 0;
+  pritf("hello cat\n");
+{
+int main()
+#include <stdio.h>
+-bash-4.2$ cd ~
+-bash-4.2$ ls
+clash  Code  d1  Git  test  test1.txt
+-bash-4.2$ cd Git/
+-bash-4.2$ ls
+linux
+-bash-4.2$ cd linux/
+-bash-4.2$ ls
+22_8_8_cmd.txt  LICENSE  README.md  test.txt
+-bash-4.2$ script -a 22_8_9_cmd.txt
+Script started, file is 22_8_9_cmd.txt
+bash-4.2$ exit
+exit
+Script done, file is 22_8_9_cmd.txt
+-bash-4.2$ cat 22_8_9_cmd.txt
+
+Script done on Tue 09 Aug 2022 11:37:52 PM CST
