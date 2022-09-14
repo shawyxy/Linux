@@ -1,0 +1,284 @@
+-bash-4.2$ vimtutor
+-bash-4.2$ ls
+clash  Code  d1  Git  test  test1.txt
+-bash-4.2$ vim test
+-bash-4.2$ ls
+clash  Code  d1  Git  test  test1.txt
+-bash-4.2$ vim test1.txt 
+-bash-4.2$ vim test1.txt 
+-bash-4.2$ vim test1.txt 
+-bash-4.2$ vim test1.txt 
+-bash-4.2$ vim test1.txt
+
+/bin/bash: q: command not found
+
+shell returned 127
+
+Press ENTER or type command to continue
+-bash-4.2$ vim test1.txt
+-bash-4.2$ vim test1.txt
+-bash-4.2$ `curl -sLf [https://gitee.com/HGtz2222/VimForCpp/raw/master/install.sh](https://gitee.com/HGtz2222/VimForCpp/raw/master/install.sh)
+>  -o ./install.sh && bash ./install.sh`
+-bash: command substitution: line 1: syntax error near unexpected token `('
+-bash: command substitution: line 1: `curl -sLf [https://gitee.com/HGtz2222/VimForCpp/raw/master/install.sh](https://gitee.com/HGtz2222/VimForCpp/raw/master/install.sh)'
+-bash-4.2$ curl -sLf https://gitee.com/HGtz2222/VimForCpp/raw/master/install.sh
+curl: option -sLf https://gitee.com/HGtz2222/VimForCpp/raw/master/install.sh: is unknown
+curl: try 'curl --help' or 'curl --manual' for more information
+-bash-4.2$  -o ./install.sh && bash ./install.sh
+-bash: $'\302\240-o': command not found
+-bash-4.2$ curl -sLf https://gitee.com/HGtz2222/VimForCpp/raw/master/install.sh
+curl: option -sLf https://gitee.com/HGtz2222/VimForCpp/raw/master/install.sh: is unknown
+curl: try 'curl --help' or 'curl --manual' for more information
+-bash-4.2$  -o ./install.sh && bash ./install.sh^C
+-bash-4.2$ ```cpp
+> curl -sLf [https://gitee.com/HGtz2222/VimForCpp/raw/master/install.sh](https://gitee.com/HGtz2222/VimForCpp/raw/master/install.sh)
+>  -o ./install.sh && bash ./install.sh
+> ```cpp
+curl -sLf [https://gitee.com/HGtz2222/VimForCpp/raw/master/install.sh](https://gitee.com/HGtz2222/VimForCpp/raw/master/install.sh)
+ -o ./install.sh && bash ./install.sh^C
+-bash-4.2$ curl -sLf https://gitee.com/HGtz2222/VimForCpp/raw/master/install.sh-o ./install.sh && bash ./install.sh
+^C
+-bash-4.2$ pwd
+/home/xy
+-bash-4.2$ ls
+clash  Code  d1  Git  test  test1.txt
+-bash-4.2$ cd Code
+-bash-4.2$ ls
+CppCode  d1
+-bash-4.2$ cd CppCode/
+-bash-4.2$ ls
+-bash-4.2$ cd ..
+-bash-4.2$ ls
+CppCode  d1
+-bash-4.2$ cd ..
+-bash-4.2$ ls
+clash  Code  d1  Git  test  test1.txt
+-bash-4.2$ cd test
+-bash-4.2$ ls
+file.txt  test.txt  tmp.txt
+-bash-4.2$ touch test.cpp
+-bash-4.2$ vim test.cpp
+-bash-4.2$ g++ test.cpp
+test.cpp: In function ‘int main()’:
+test.cpp:4:3: error: ‘cout’ was not declared in this scope
+   cout << "hello world" << endl;
+   ^
+test.cpp:4:3: note: suggested alternative:
+In file included from test.cpp:1:0:
+/usr/include/c++/4.8.2/iostream:61:18: note:   ‘std::cout’
+   extern ostream cout;  /// Linked to standard output
+                  ^
+test.cpp:4:28: error: ‘endl’ was not declared in this scope
+   cout << "hello world" << endl;
+                            ^
+test.cpp:4:28: note: suggested alternative:
+In file included from /usr/include/c++/4.8.2/iostream:39:0,
+                 from test.cpp:1:
+/usr/include/c++/4.8.2/ostream:564:5: note:   ‘std::endl’
+     endl(basic_ostream<_CharT, _Traits>& __os)
+     ^
+-bash-4.2$ vim test.cpp
+-bash-4.2$ g++ test.cpp
+-bash-4.2$ ls
+a.out  file.txt  test.cpp  test.txt  tmp.txt
+-bash-4.2$ ./a.out
+hello world
+-bash-4.2$ vim test.cpp
+-bash-4.2$ g++ test.cpp
+-bash-4.2$ ./a.out
+hello world
+hello world
+-bash-4.2$ ls
+a.out  file.txt  test.cpp  test.txt  tmp.txt
+-bash-4.2$ vim test1.cpp
+-bash-4.2$ gdb test1
+GNU gdb (GDB) Red Hat Enterprise Linux 7.6.1-120.el7
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-redhat-linux-gnu".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+test1: No such file or directory.
+(gdb) test1.cpp
+Undefined command: "test1".  Try "help".
+(gdb) q
+-bash-4.2$ g++ test1.cpp
+-bash-4.2$ gdb test1
+GNU gdb (GDB) Red Hat Enterprise Linux 7.6.1-120.el7
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-redhat-linux-gnu".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+test1: No such file or directory.
+(gdb) q
+-bash-4.2$ gdb test1.cpp
+GNU gdb (GDB) Red Hat Enterprise Linux 7.6.1-120.el7
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-redhat-linux-gnu".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+"/home/xy/test/test1.cpp": not in executable format: File format not recognized
+(gdb) q
+-bash-4.2$ g++ test1.cpp -g
+-bash-4.2$ gdb test1
+GNU gdb (GDB) Red Hat Enterprise Linux 7.6.1-120.el7
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-redhat-linux-gnu".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+test1: No such file or directory.
+(gdb) q
+-bash-4.2$ g++ test1.cpp -g
+-bash-4.2$ ll
+total 40
+-rwxrwxr-x 1 xy xy 19536 Sep 14 19:58 a.out
+-rw-rw-r-- 1 xy xy   657 Aug 10 19:42 file.txt
+-rw-rw-r-- 1 xy xy    95 Sep 14 19:55 test1.cpp
+-rw-rw-r-- 1 xy xy   121 Sep 14 17:44 test.cpp
+-rw-rw-r-- 1 xy xy   781 Aug 10 17:02 test.txt
+-rw-rw-r-- 1 xy xy    48 Aug 10 19:48 tmp.txt
+-bash-4.2$ gdb a.out
+GNU gdb (GDB) Red Hat Enterprise Linux 7.6.1-120.el7
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-redhat-linux-gnu".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from /home/xy/test/a.out...done.
+(gdb) l
+1       #include <iostream>
+2       using namespace std;
+3       int main()
+4       {
+5         cout << "hello" << endl;
+6         return 0;
+7       }
+(gdb) q
+-bash-4.2$ vim test2.cpp
+-bash-4.2$ gdb test2
+GNU gdb (GDB) Red Hat Enterprise Linux 7.6.1-120.el7
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-redhat-linux-gnu".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+test2: No such file or directory.
+(gdb) l
+No symbol table is loaded.  Use the "file" command.
+(gdb) g++ test3.cpp
+Undefined command: "g++".  Try "help".
+(gdb) q
+-bash-4.2$ gdb test2^C
+-bash-4.2$ g++ test3.cpp
+g++: error: test3.cpp: No such file or directory
+g++: fatal error: no input files
+compilation terminated.
+-bash-4.2$ ls
+a.out  file.txt  test1.cpp  test2.cpp  test.cpp  test.txt  tmp.txt
+-bash-4.2$ ll
+total 44
+-rwxrwxr-x 1 xy xy 19536 Sep 14 19:58 a.out
+-rw-rw-r-- 1 xy xy   657 Aug 10 19:42 file.txt
+-rw-rw-r-- 1 xy xy    95 Sep 14 19:55 test1.cpp
+-rw-rw-r-- 1 xy xy    95 Sep 14 20:01 test2.cpp
+-rw-rw-r-- 1 xy xy   121 Sep 14 17:44 test.cpp
+-rw-rw-r-- 1 xy xy   781 Aug 10 17:02 test.txt
+-rw-rw-r-- 1 xy xy    48 Aug 10 19:48 tmp.txt
+-bash-4.2$ g++ test2.cpp
+test2.cpp: In function ‘int main()’:
+test2.cpp:6:3: error: ‘retutn’ was not declared in this scope
+   retutn 0;
+   ^
+test2.cpp:6:10: error: expected ‘;’ before numeric constant
+   retutn 0;
+          ^
+-bash-4.2$ vim test3
+-bash-4.2$ ls
+a.out  file.txt  test1.cpp  test2.cpp  test3  test.cpp  test.txt  tmp.txt
+-bash-4.2$ vim test2.cpp 
+-bash-4.2$ g++ test2.cpp
+-bash-4.2$ gdb test2
+GNU gdb (GDB) Red Hat Enterprise Linux 7.6.1-120.el7
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-redhat-linux-gnu".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+test2: No such file or directory.
+(gdb) q
+-bash-4.2$ ls
+a.out  file.txt  test1.cpp  test2.cpp  test3  test.cpp  test.txt  tmp.txt
+-bash-4.2$ rm a.out
+-bash-4.2$ ls
+file.txt  test1.cpp  test2.cpp  test3  test.cpp  test.txt  tmp.txt
+-bash-4.2$ rm test1
+rm: cannot remove ‘test1’: No such file or directory
+-bash-4.2$ rm test1.cpp
+-bash-4.2$ rm test2.cpp
+-bash-4.2$ ls
+file.txt  test3  test.cpp  test.txt  tmp.txt
+-bash-4.2$ rm test3
+-bash-4.2$ ls
+file.txt  test.cpp  test.txt  tmp.txt
+-bash-4.2$ vim test1.c
+-bash-4.2$ vim test1.c
+-bash-4.2$ gcc test1 -o _test1
+gcc: error: test1: No such file or directory
+gcc: fatal error: no input files
+compilation terminated.
+-bash-4.2$ gcc test1.c -o _test1
+test1.c: In function ‘func’:
+test1.c:5:3: error: ‘for’ loop initial declarations are only allowed in C99 mode
+   for(int i = 1; i <= n; i++)
+   ^
+test1.c:5:3: note: use option -std=c99 or -std=gnu99 to compile your code
+-bash-4.2$ vim test1.c
+-bash-4.2$ gcc test1.c -o _test1
+-bash-4.2$ ls
+file.txt  _test1  test1.c  test.cpp  test.txt  tmp.txt
+-bash-4.2$ rm test.cpp
+-bash-4.2$ rm test.txt
+-bash-4.2$ lsl
+-bash: lsl: command not found
+-bash-4.2$ ls
+file.txt  _test1  test1.c  tmp.txt
+-bash-4.2$ rm file.txt
+-bash-4.2$ ls
+_test1  test1.c  tmp.txt
+-bash-4.2$ rm tmp.txt
+-bash-4.2$ ls
+_test1  test1.c
+-bash-4.2$ 
+Session was closed
+Last login: Wed Sep 14 14:58:20 2022 from 36.61.134.126
+-bash-4.2$ ls
+clash  Code  d1  Git  test  test1.txt
+-bash-4.2$ cd Git
+-bash-4.2$ ls
+linux
+-bash-4.2$ cd linux
+-bash-4.2$ ls
