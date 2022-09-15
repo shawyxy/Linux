@@ -1,0 +1,1017 @@
+Last login: Wed Sep 14 23:06:13 2022 from 36.61.134.126
+-bash-4.2$ pwd
+/home/xy
+-bash-4.2$ lsl
+-bash: lsl: command not found
+-bash-4.2$ 
+-bash-4.2$ ls
+clash  Code  d1  Git  test  test1.txt
+-bash-4.2$ cd test
+-bash-4.2$ ls
+a.out  _test1  test1.c
+-bash-4.2$ gcc test1.c
+-bash-4.2$ ls
+a.out  _test1  test1.c
+-bash-4.2$ rm a.out
+-bash-4.2$ ls
+_test1  test1.c
+-bash-4.2$ gcc test1.c -o _test1
+-bash-4.2$ ls
+_test1  test1.c
+-bash-4.2$ gdb _test1
+GNU gdb (GDB) Red Hat Enterprise Linux 7.6.1-120.el7
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-redhat-linux-gnu".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from /home/xy/test/_test1...(no debugging symbols found)...done.
+(gdb) r
+Starting program: /home/xy/test/_test1 
+5050
+[Inferior 1 (process 4029) exited normally]
+Missing separate debuginfos, use: debuginfo-install glibc-2.17-326.el7_9.x86_64
+(gdb) q
+-bash-4.2$ gcc test1.c -o _test1 -g
+-bash-4.2$ gdb _test1
+GNU gdb (GDB) Red Hat Enterprise Linux 7.6.1-120.el7
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-redhat-linux-gnu".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from /home/xy/test/_test1...done.
+(gdb) r
+Starting program: /home/xy/test/_test1 
+5050
+[Inferior 1 (process 5770) exited normally]
+Missing separate debuginfos, use: debuginfo-install glibc-2.17-326.el7_9.x86_64
+(gdb) q
+-bash-4.2$ ls
+_test1  test1.c
+-bash-4.2$ gcc -g test1.c -o _test1
+-bash-4.2$ ls
+_test1  test1.c
+-bash-4.2$ gdb _test1
+GNU gdb (GDB) Red Hat Enterprise Linux 7.6.1-120.el7
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-redhat-linux-gnu".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from /home/xy/test/_test1...done.
+(gdb) r
+Starting program: /home/xy/test/_test1 
+5050
+[Inferior 1 (process 5882) exited normally]
+Missing separate debuginfos, use: debuginfo-install glibc-2.17-326.el7_9.x86_64
+(gdb) q
+-bash-4.2$ ls
+_test1  test1.c
+-bash-4.2$ rm _test1 
+-bash-4.2$ ls
+test1.c
+-bash-4.2$ gcc -g test1.c -o _test1
+-bash-4.2$ gdb _test1
+GNU gdb (GDB) Red Hat Enterprise Linux 7.6.1-120.el7
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-redhat-linux-gnu".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from /home/xy/test/_test1...done.
+(gdb) r
+Starting program: /home/xy/test/_test1 
+5050
+[Inferior 1 (process 6587) exited normally]
+Missing separate debuginfos, use: debuginfo-install glibc-2.17-326.el7_9.x86_64
+(gdb) q
+-bash-4.2$ 
+Session was closed
+Last login: Thu Sep 15 08:45:23 2022 from 36.61.134.126
+-bash-4.2$ ls
+clash  Code  d1  Git  test  test1.txt
+-bash-4.2$ cd test
+-bash-4.2$ ls
+_test1  test1.c
+-bash-4.2$ rm _test1
+-bash-4.2$ ls
+test1.c
+-bash-4.2$ gcc test1.c -o _test1 
+-bash-4.2$ gdb _test1
+GNU gdb (GDB) Red Hat Enterprise Linux 7.6.1-120.el7
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-redhat-linux-gnu".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from /home/xy/test/_test1...(no debugging symbols found)...done.
+(gdb) r
+Starting program: /home/xy/test/_test1 
+5050
+[Inferior 1 (process 19175) exited normally]
+Missing separate debuginfos, use: debuginfo-install glibc-2.17-326.el7_9.x86_64
+(gdb) q
+-bash-4.2$ gcc test1.c -g -o _test1  
+-bash-4.2$ gdb _test1
+GNU gdb (GDB) Red Hat Enterprise Linux 7.6.1-120.el7
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-redhat-linux-gnu".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from /home/xy/test/_test1...done.
+(gdb) r
+Starting program: /home/xy/test/_test1 
+5050
+[Inferior 1 (process 19250) exited normally]
+Missing separate debuginfos, use: debuginfo-install glibc-2.17-326.el7_9.x86_64
+(gdb) q
+-bash-4.2$ gcc test1.c -o _test1 -g  
+-bash-4.2$ gdb _test1
+GNU gdb (GDB) Red Hat Enterprise Linux 7.6.1-120.el7
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-redhat-linux-gnu".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from /home/xy/test/_test1...done.
+(gdb) r
+Starting program: /home/xy/test/_test1 
+5050
+[Inferior 1 (process 19449) exited normally]
+Missing separate debuginfos, use: debuginfo-install glibc-2.17-326.el7_9.x86_64
+(gdb) r
+Starting program: /home/xy/test/_test1 
+5050
+[Inferior 1 (process 19606) exited normally]
+(gdb) vi /etc/yum.repos.d/CentOS-Debuginfo.repo
+Undefined command: "vi".  Try "help".
+(gdb) r
+Starting program: /home/xy/test/_test1 
+5050
+[Inferior 1 (process 19834) exited normally]
+(gdb) q
+-bash-4.2$ ls
+_test1  test1.c
+-bash-4.2$ vim /etc/yum.repos.d/CentOS-Debuginfo.repo
+-bash-4.2$ vim /etc/yum.repos.d/CentOS-Debuginfo.repo
+-bash-4.2$ sudo vim /etc/yum.repos.d/CentOS-Debuginfo.repo
+[sudo] password for xy: 
+-bash-4.2$ vim /etc/yum.repos.d/CentOS-Debuginfo.repo
+-bash-4.2$ vim /etc/yum.repos.d/CentOS-Debuginfo.repo
+-bash-4.2$ ls
+_test1  test1.c
+-bash-4.2$ vim /etc/yum.repos.d/CentOS-Debuginfo.repo^C
+-bash-4.2$ gcc test1.c -g -o _test1
+-bash-4.2$ gdb _test1
+GNU gdb (GDB) Red Hat Enterprise Linux 7.6.1-120.el7
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-redhat-linux-gnu".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from /home/xy/test/_test1...done.
+(gdb) r
+Starting program: /home/xy/test/_test1 
+5050
+[Inferior 1 (process 20807) exited normally]
+Missing separate debuginfos, use: debuginfo-install glibc-2.17-326.el7_9.x86_64
+(gdb) q
+-bash-4.2$ sudo yum install -y glibc
+Loaded plugins: fastestmirror, langpacks
+Repository epel is listed more than once in the configuration
+Determining fastest mirrors
+ * base: mirrors.aliyun.com
+ * extras: mirrors.aliyun.com
+ * updates: mirrors.aliyun.com
+base                                                                       | 3.6 kB  00:00:00     
+debug                                                                      | 2.5 kB  00:00:00     
+epel                                                                       | 4.7 kB  00:00:00     
+
+http://mirrors.aliyuncs.com/centos/7/extras/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://mirrors.aliyuncs.com/centos/7/extras/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30000 milliseconds')
+Trying other mirror.
+http://mirrors.cloud.aliyuncs.com/centos/7/extras/x86_64/repodata/repomd.xml: [Errno 14] curl#6 - "Could not resolve host: mirrors.cloud.aliyuncs.com; Unknown error"
+Trying other mirror.
+extras                                                                     | 2.9 kB  00:00:00     
+updates                                                                    | 2.9 kB  00:00:00     
+(1/6): epel/7/x86_64/group_gz                                              |  97 kB  00:00:00     
+(2/6): epel/7/x86_64/updateinfo                                            | 1.0 MB  00:00:00     
+(3/6): extras/7/x86_64/primary_db                                          | 250 kB  00:00:00     
+(4/6): debug/x86_64/primary_db                                             | 2.8 MB  00:00:02     
+(5/6): epel/7/x86_64/primary_db                                            | 7.0 MB  00:00:10     
+(6/6): updates/7/x86_64/primary_db                                         |  17 MB  00:00:59     
+Package glibc-2.17-326.el7_9.x86_64 already installed and latest version
+Nothing to do
+-bash-4.2$ 
+-bash-4.2$ debuginfo-install glibc
+Loaded plugins: fastestmirror, langpacks
+You must be root to run this command.
+-bash-4.2$ debuginfo-install glibc
+Loaded plugins: fastestmirror, langpacks
+You must be root to run this command.
+-bash-4.2$ sudo debuginfo-install glibc
+Loaded plugins: fastestmirror, langpacks
+Repository epel is listed more than once in the configuration
+enabling epel-debuginfo
+Loading mirror speeds from cached hostfile
+epel-debuginfo/x86_64/metalink                                             | 6.2 kB  00:00:00     
+ * base: mirrors.aliyun.com
+ * epel-debuginfo: mirror.nju.edu.cn
+ * extras: mirrors.aliyun.com
+ * updates: mirrors.aliyun.com
+epel-debuginfo                                                             | 3.0 kB  00:00:00     
+epel-debuginfo/x86_64/primary_db                                           | 903 kB  00:00:00     
+--> Running transaction check
+---> Package glibc-debuginfo.x86_64 0:2.17-326.el7_9 will be installed
+--> Processing Dependency: glibc-debuginfo-common = 2.17-326.el7_9 for package: glibc-debuginfo-2.17-326.el7_9.x86_64
+---> Package nss-softokn-debuginfo.x86_64 0:3.67.0-3.el7_9 will be installed
+---> Package yum-plugin-auto-update-debug-info.noarch 0:1.1.31-54.el7_8 will be installed
+--> Running transaction check
+---> Package glibc-debuginfo-common.x86_64 0:2.17-326.el7_9 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+==================================================================================================
+ Package                                  Arch          Version                Repository    Size
+==================================================================================================
+Installing:
+ glibc-debuginfo                          x86_64        2.17-326.el7_9         debug        9.5 M
+ nss-softokn-debuginfo                    x86_64        3.67.0-3.el7_9         debug        2.9 M
+ yum-plugin-auto-update-debug-info        noarch        1.1.31-54.el7_8        base          29 k
+Installing for dependencies:
+ glibc-debuginfo-common                   x86_64        2.17-326.el7_9         debug        9.7 M
+
+Transaction Summary
+==================================================================================================
+Install  3 Packages (+1 Dependent package)
+
+Total download size: 22 M
+Installed size: 126 M
+Is this ok [y/d/N]: y
+Downloading packages:
+warning: /var/cache/yum/x86_64/7/debug/packages/glibc-debuginfo-common-2.17-326.el7_9.x86_64.rpm: Header V3 RSA/SHA256 Signature, key ID b6792c39: NOKEY
+Public key for glibc-debuginfo-common-2.17-326.el7_9.x86_64.rpm is not installed
+(1/4): glibc-debuginfo-common-2.17-326.el7_9.x86_64.rpm                    | 9.7 MB  00:00:07     
+(2/4): yum-plugin-auto-update-debug-info-1.1.31-54.el7_8.noarch.rpm        |  29 kB  00:00:00     
+(3/4): nss-softokn-debuginfo-3.67.0-3.el7_9.x86_64.rpm                     | 2.9 MB  00:00:01     
+(4/4): glibc-debuginfo-2.17-326.el7_9.x86_64.rpm                           | 9.5 MB  00:01:01     
+--------------------------------------------------------------------------------------------------
+Total                                                             368 kB/s |  22 MB  00:01:01     
+Retrieving key from file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-Debug-7
+Importing GPG key 0xB6792C39:
+ Userid     : "CentOS-7 Debug (CentOS-7 Debuginfo RPMS) <security@centos.org>"
+ Fingerprint: 759d 690f 6099 2d52 6a35 8cbd d0f2 5a3c b679 2c39
+ Package    : centos-release-7-6.1810.2.el7.centos.x86_64 (@anaconda)
+ From       : /etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-Debug-7
+Is this ok [y/N]: y
+Key imported successfully
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : glibc-debuginfo-common-2.17-326.el7_9.x86_64                                   1/4 
+  Installing : glibc-debuginfo-2.17-326.el7_9.x86_64                                          2/4 
+  Installing : nss-softokn-debuginfo-3.67.0-3.el7_9.x86_64                                    3/4 
+  Installing : yum-plugin-auto-update-debug-info-1.1.31-54.el7_8.noarch                       4/4 
+  Verifying  : yum-plugin-auto-update-debug-info-1.1.31-54.el7_8.noarch                       1/4 
+  Verifying  : glibc-debuginfo-common-2.17-326.el7_9.x86_64                                   2/4 
+  Verifying  : glibc-debuginfo-2.17-326.el7_9.x86_64                                          3/4 
+  Verifying  : nss-softokn-debuginfo-3.67.0-3.el7_9.x86_64                                    4/4 
+
+Installed:
+  glibc-debuginfo.x86_64 0:2.17-326.el7_9                                                         
+  nss-softokn-debuginfo.x86_64 0:3.67.0-3.el7_9                                                   
+  yum-plugin-auto-update-debug-info.noarch 0:1.1.31-54.el7_8                                      
+
+Dependency Installed:
+  glibc-debuginfo-common.x86_64 0:2.17-326.el7_9                                                  
+
+Complete!
+-bash-4.2$ ls
+_test1  test1.c
+-bash-4.2$ gdb _test1
+GNU gdb (GDB) Red Hat Enterprise Linux 7.6.1-120.el7
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-redhat-linux-gnu".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from /home/xy/test/_test1...done.
+(gdb) r
+Starting program: /home/xy/test/_test1 
+5050
+[Inferior 1 (process 21818) exited normally]
+(gdb) q
+-bash-4.2$ gcc test1.c -g -o _test1
+-bash-4.2$ gdb _test1
+GNU gdb (GDB) Red Hat Enterprise Linux 7.6.1-120.el7
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-redhat-linux-gnu".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from /home/xy/test/_test1...done.
+(gdb) r
+Starting program: /home/xy/test/_test1 
+5050
+[Inferior 1 (process 23543) exited normally]
+(gdb) b main
+Breakpoint 1 at 0x400563: file test1.c, line 14.
+(gdb) q
+-bash-4.2$ ls
+_test1  test1.c
+-bash-4.2$ rm _test1
+-bash-4.2$ ls
+test1.c
+-bash-4.2$ gcc test1.c -o _test1
+-bash-4.2$ gdb _test1
+GNU gdb (GDB) Red Hat Enterprise Linux 7.6.1-120.el7
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-redhat-linux-gnu".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from /home/xy/test/_test1...(no debugging symbols found)...done.
+(gdb) q
+-bash-4.2$ gcc test1.c -g -o _test1
+-bash-4.2$ gdb _test1
+GNU gdb (GDB) Red Hat Enterprise Linux 7.6.1-120.el7
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-redhat-linux-gnu".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from /home/xy/test/_test1...done.
+(gdb) r
+Starting program: /home/xy/test/_test1 
+5050
+[Inferior 1 (process 24189) exited normally]
+(gdb) l
+5         int i = 1;
+6         for(; i <= n; i++)
+7         {
+8           ret += i;
+9         }
+10        return ret;
+11      }
+12      int main()
+13      {
+14        int n = 100, ans = 0;
+(gdb) l
+15        ans = func(n);
+16        printf("%d\n", ans);
+17        return 0;
+18      }
+(gdb) l
+Line number 19 out of range; test1.c has 18 lines.
+(gdb) r l
+Starting program: /home/xy/test/_test1 l
+5050
+[Inferior 1 (process 24991) exited normally]
+(gdb) l
+Line number 19 out of range; test1.c has 18 lines.
+(gdb) q
+-bash-4.2$ gdb _test1
+GNU gdb (GDB) Red Hat Enterprise Linux 7.6.1-120.el7
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-redhat-linux-gnu".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from /home/xy/test/_test1...done.
+(gdb) l
+5         int i = 1;
+6         for(; i <= n; i++)
+7         {
+8           ret += i;
+9         }
+10        return ret;
+11      }
+12      int main()
+13      {
+14        int n = 100, ans = 0;
+(gdb) l 1
+1       #include <stdio.h>
+2       int func(int n)
+3       {
+4         int ret = 0;
+5         int i = 1;
+6         for(; i <= n; i++)
+7         {
+8           ret += i;
+9         }
+10        return ret;
+(gdb) l2
+Undefined command: "l2".  Try "help".
+(gdb) l 3
+1       #include <stdio.h>
+2       int func(int n)
+3       {
+4         int ret = 0;
+5         int i = 1;
+6         for(; i <= n; i++)
+7         {
+8           ret += i;
+9         }
+10        return ret;
+(gdb) l 11
+6         for(; i <= n; i++)
+7         {
+8           ret += i;
+9         }
+10        return ret;
+11      }
+12      int main()
+13      {
+14        int n = 100, ans = 0;
+15        ans = func(n);
+(gdb) list
+16        printf("%d\n", ans);
+17        return 0;
+18      }
+(gdb) q
+-bash-4.2$ gdb _test1 
+GNU gdb (GDB) Red Hat Enterprise Linux 7.6.1-120.el7
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-redhat-linux-gnu".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from /home/xy/test/_test1...done.
+(gdb) list
+5         int i = 1;
+6         for(; i <= n; i++)
+7         {
+8           ret += i;
+9         }
+10        return ret;
+11      }
+12      int main()
+13      {
+14        int n = 100, ans = 0;
+(gdb) l
+15        ans = func(n);
+16        printf("%d\n", ans);
+17        return 0;
+18      }
+(gdb) l 1
+1       #include <stdio.h>
+2       int func(int n)
+3       {
+4         int ret = 0;
+5         int i = 1;
+6         for(; i <= n; i++)
+7         {
+8           ret += i;
+9         }
+10        return ret;
+(gdb) q
+-bash-4.2$ gdb _test1
+GNU gdb (GDB) Red Hat Enterprise Linux 7.6.1-120.el7
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-redhat-linux-gnu".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from /home/xy/test/_test1...done.
+(gdb) l 1,20
+1       #include <stdio.h>
+2       int func(int n)
+3       {
+4         int ret = 0;
+5         int i = 1;
+6         for(; i <= n; i++)
+7         {
+8           ret += i;
+9         }
+10        return ret;
+11      }
+12      int main()
+13      {
+14        int n = 100, ans = 0;
+15        ans = func(n);
+16        printf("%d\n", ans);
+17        return 0;
+18      }
+(gdb) r
+Starting program: /home/xy/test/_test1 
+5050
+[Inferior 1 (process 26158) exited normally]
+(gdb) break func
+Breakpoint 1 at 0x400534: file test1.c, line 4.
+(gdb) break 14
+Breakpoint 2 at 0x400563: file test1.c, line 14.
+(gdb) i breakpoints
+Num     Type           Disp Enb Address            What
+1       breakpoint     keep y   0x0000000000400534 in func at test1.c:4
+2       breakpoint     keep y   0x0000000000400563 in main at test1.c:14
+(gdb) r
+Starting program: /home/xy/test/_test1 
+
+Breakpoint 2, main () at test1.c:14
+14        int n = 100, ans = 0;
+(gdb) n
+15        ans = func(n);
+(gdb) n
+
+Breakpoint 1, func (n=100) at test1.c:4
+4         int ret = 0;
+(gdb) s
+5         int i = 1;
+(gdb) p i
+$1 = 0
+(gdb) n
+6         for(; i <= n; i++)
+(gdb) n
+8           ret += i;
+(gdb) display i
+1: i = 1
+(gdb) n
+6         for(; i <= n; i++)
+1: i = 1
+(gdb) n
+8           ret += i;
+1: i = 2
+(gdb) n
+6         for(; i <= n; i++)
+1: i = 2
+(gdb) c
+Continuing.
+5050
+[Inferior 1 (process 29210) exited normally]
+(gdb) r
+Starting program: /home/xy/test/_test1 
+
+Breakpoint 2, main () at test1.c:14
+14        int n = 100, ans = 0;
+(gdb) bt
+#0  main () at test1.c:14
+(gdb) n
+15        ans = func(n);
+(gdb) bt
+#0  main () at test1.c:15
+(gdb) n
+
+Breakpoint 1, func (n=100) at test1.c:4
+4         int ret = 0;
+1: i = 0
+(gdb) bt
+#0  func (n=100) at test1.c:4
+#1  0x000000000040057b in main () at test1.c:15
+(gdb) s
+5         int i = 1;
+1: i = 0
+(gdb) n
+6         for(; i <= n; i++)
+1: i = 1
+(gdb) finish
+Run till exit from #0  func (n=100) at test1.c:6
+0x000000000040057b in main () at test1.c:15
+15        ans = func(n);
+Value returned is $2 = 5050
+(gdb) 
+Session was closed
+Last login: Thu Sep 15 10:04:32 2022 from 36.61.134.126
+-bash-4.2$ ls
+clash  Code  d1  Git  test  test1.txt
+-bash-4.2$ cd test
+-bash-4.2$ ls
+_test1  test1.c
+-bash-4.2$ gdb _test1
+GNU gdb (GDB) Red Hat Enterprise Linux 7.6.1-120.el7
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-redhat-linux-gnu".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from /home/xy/test/_test1...done.
+(gdb) bt
+No stack.
+(gdb) ib
+Undefined command: "ib".  Try "help".
+(gdb) i b
+No breakpoints or watchpoints.
+(gdb) i break
+No breakpoints or watchpoints.
+(gdb) l 1,20
+1       #include <stdio.h>
+2       int func(int n)
+3       {
+4         int ret = 0;
+5         int i = 1;
+6         for(; i <= n; i++)
+7         {
+8           ret += i;
+9         }
+10        return ret;
+11      }
+12      int main()
+13      {
+14        int n = 100, ans = 0;
+15        ans = func(n);
+16        printf("%d\n", ans);
+17        return 0;
+18      }
+(gdb)  b main
+Breakpoint 1 at 0x400563: file test1.c, line 14.
+(gdb) b 15
+Breakpoint 2 at 0x400571: file test1.c, line 15.
+(gdb) l 1,20
+1       #include <stdio.h>
+2       int func(int n)
+3       {
+4         int ret = 0;
+5         int i = 1;
+6         for(; i <= n; i++)
+7         {
+8           ret += i;
+9         }
+10        return ret;
+11      }
+12      int main()
+13      {
+14        int n = 100, ans = 0;
+15        ans = func(n);
+16        printf("%d\n", ans);
+17        return 0;
+18      }
+(gdb) i b
+Num     Type           Disp Enb Address            What
+1       breakpoint     keep y   0x0000000000400563 in main at test1.c:14
+2       breakpoint     keep y   0x0000000000400571 in main at test1.c:15
+(gdb) d b
+Ambiguous delete command "b": bookmark, breakpoints.
+(gdb) l 1,20
+1       #include <stdio.h>
+2       int func(int n)
+3       {
+4         int ret = 0;
+5         int i = 1;
+6         for(; i <= n; i++)
+7         {
+8           ret += i;
+9         }
+10        return ret;
+11      }
+12      int main()
+13      {
+14        int n = 100, ans = 0;
+15        ans = func(n);
+16        printf("%d\n", ans);
+17        return 0;
+18      }
+(gdb) i b
+Num     Type           Disp Enb Address            What
+1       breakpoint     keep y   0x0000000000400563 in main at test1.c:14
+2       breakpoint     keep y   0x0000000000400571 in main at test1.c:15
+(gdb) disable breakpoints
+(gdb) i  b
+Num     Type           Disp Enb Address            What
+1       breakpoint     keep n   0x0000000000400563 in main at test1.c:14
+2       breakpoint     keep n   0x0000000000400571 in main at test1.c:15
+(gdb) enable breakpoints
+(gdb) i b
+Num     Type           Disp Enb Address            What
+1       breakpoint     keep y   0x0000000000400563 in main at test1.c:14
+2       breakpoint     keep y   0x0000000000400571 in main at test1.c:15
+(gdb) delete breakpoints
+Delete all breakpoints? (y or n) y
+(gdb) i b
+No breakpoints or watchpoints.
+(gdb) b main
+Breakpoint 3 at 0x400563: file test1.c, line 14.
+(gdb) i b
+Num     Type           Disp Enb Address            What
+3       breakpoint     keep y   0x0000000000400563 in main at test1.c:14
+(gdb) delete breakpoints 3
+(gdb) i b
+No breakpoints or watchpoints.
+(gdb) q
+-bash-4.2$ ls
+_test1  test1.c
+-bash-4.2$ ls
+_test1  test1.c
+-bash-4.2$ cd /etc/vimrc
+-bash: cd: /etc/vimrc: Not a directory
+-bash-4.2$ cd /etc
+-bash-4.2$ ls
+abrt                     GeoIP.conf                modules-load.d        rwtab.d
+acpi                     glvnd                     motd                  sasl2
+adjtime                  gnupg                     mtab                  scl
+aliases                  GREP_COLORS               multipath             securetty
+aliases.db               groff                     my.cnf                security
+alternatives             group                     my.cnf.d              selinux
+anacrontab               group-                    nanorc                services
+asound.conf              grub2.cfg                 netconfig             sestatus.conf
+at.deny                  grub.d                    NetworkManager        setuptool.d
+audisp                   gshadow                   networks              sgml
+audit                    gshadow-                  nscd.conf             shadow
+bash_completion.d        gss                       nsswitch.conf         shadow-
+bashrc                   host.conf                 nsswitch.conf.bak     shells
+binfmt.d                 hostname                  nsswitch.conf.rpmnew  skel
+centos-release           hosts                     ntp                   sos.conf
+centos-release-upstream  hosts.allow               ntp.conf              ssh
+chkconfig.d              hosts.deny                openldap              ssl
+chrony.conf              ibutils2                  opt                   statetab
+chrony.conf.dist         img_version               os-release            statetab.d
+chrony.keys              infiniband                pam.d                 subgid
+cifs-utils               infiniband-diags          passwd                subgid-
+clash                    init.d                    passwd-               subuid
+cloud                    inittab                   pkcs11                subuid-
+cron.d                   inputrc                   pki                   sudo.conf
+cron.daily               iproute2                  plymouth              sudoers
+cron.deny                iscsi                     pm                    sudoers.d
+cron.hourly              issue                     polkit-1              sudoers.rpmsave
+cron.monthly             issue.net                 popt.d                sudo-ldap.conf
+crontab                  kdump.conf                postfix               sysconfig
+cron.weekly              kernel                    ppp                   sysctl.conf
+crypttab                 krb5.conf                 prelink.conf.d        sysctl.d
+csh.cshrc                krb5.conf.d               printcap              systemd
+csh.login                ld.so.cache               profile               system-release
+dbus-1                   ld.so.conf                profile.d             system-release-cpe
+dconf                    ld.so.conf.d              protocols             tcsd.conf
+default                  ld.so.preload             python                terminfo
+depmod.d                 libaudit.conf             qcloudzone            tmpfiles.d
+dhcp                     libblockdev               qemu-ga               trusted-key.key
+DIR_COLORS               libnl                     rc0.d                 tuned
+DIR_COLORS.256color      libreport                 rc1.d                 ucx
+DIR_COLORS.lightbgcolor  libuser.conf              rc2.d                 udev
+dracut.conf              locale.conf               rc3.d                 udisks2
+dracut.conf.d            localtime                 rc4.d                 updatedb.conf
+e2fsck.conf              login.defs                rc5.d                 usb_modeswitch.conf
+egl                      logrotate.conf            rc6.d                 uuid
+environment              logrotate.d               rc.d                  vconsole.conf
+ethertypes               lsm                       rc.local              vimrc
+exports                  lvm                       rdma                  virc
+favicon.png              machine-id                redhat-release        wgetrc
+filesystems              machine-info              resolv.conf           wpa_supplicant
+firewalld                magic                     rpc                   X11
+fonts                    mail.rc                   rpm                   xdg
+fstab                    makedumpfile.conf.sample  rshim.conf            xinetd.d
+fuse.conf                man_db.conf               rsyncd.conf           xml
+gcrypt                   mft                       rsyslog.conf          yum
+gdbinit                  mke2fs.conf               rsyslog.d             yum.conf
+gdbinit.d                modprobe.d                rwtab                 yum.repos.d
+-bash-4.2$ cd vimrc
+-bash: cd: vimrc: Not a directory
+-bash-4.2$ vim vimrc
+-bash-4.2$ vim vimrc
+-bash-4.2$ vim vimrc
+-bash-4.2$ sudo vim vimrc
+[sudo] password for xy: 
+-bash-4.2$ vim vimrc
+-bash-4.2$ ls
+abrt                     GeoIP.conf                modules-load.d        rwtab.d
+acpi                     glvnd                     motd                  sasl2
+adjtime                  gnupg                     mtab                  scl
+aliases                  GREP_COLORS               multipath             securetty
+aliases.db               groff                     my.cnf                security
+alternatives             group                     my.cnf.d              selinux
+anacrontab               group-                    nanorc                services
+asound.conf              grub2.cfg                 netconfig             sestatus.conf
+at.deny                  grub.d                    NetworkManager        setuptool.d
+audisp                   gshadow                   networks              sgml
+audit                    gshadow-                  nscd.conf             shadow
+bash_completion.d        gss                       nsswitch.conf         shadow-
+bashrc                   host.conf                 nsswitch.conf.bak     shells
+binfmt.d                 hostname                  nsswitch.conf.rpmnew  skel
+centos-release           hosts                     ntp                   sos.conf
+centos-release-upstream  hosts.allow               ntp.conf              ssh
+chkconfig.d              hosts.deny                openldap              ssl
+chrony.conf              ibutils2                  opt                   statetab
+chrony.conf.dist         img_version               os-release            statetab.d
+chrony.keys              infiniband                pam.d                 subgid
+cifs-utils               infiniband-diags          passwd                subgid-
+clash                    init.d                    passwd-               subuid
+cloud                    inittab                   pkcs11                subuid-
+cron.d                   inputrc                   pki                   sudo.conf
+cron.daily               iproute2                  plymouth              sudoers
+cron.deny                iscsi                     pm                    sudoers.d
+cron.hourly              issue                     polkit-1              sudoers.rpmsave
+cron.monthly             issue.net                 popt.d                sudo-ldap.conf
+crontab                  kdump.conf                postfix               sysconfig
+cron.weekly              kernel                    ppp                   sysctl.conf
+crypttab                 krb5.conf                 prelink.conf.d        sysctl.d
+csh.cshrc                krb5.conf.d               printcap              systemd
+csh.login                ld.so.cache               profile               system-release
+dbus-1                   ld.so.conf                profile.d             system-release-cpe
+dconf                    ld.so.conf.d              protocols             tcsd.conf
+default                  ld.so.preload             python                terminfo
+depmod.d                 libaudit.conf             qcloudzone            tmpfiles.d
+dhcp                     libblockdev               qemu-ga               trusted-key.key
+DIR_COLORS               libnl                     rc0.d                 tuned
+DIR_COLORS.256color      libreport                 rc1.d                 ucx
+DIR_COLORS.lightbgcolor  libuser.conf              rc2.d                 udev
+dracut.conf              locale.conf               rc3.d                 udisks2
+dracut.conf.d            localtime                 rc4.d                 updatedb.conf
+e2fsck.conf              login.defs                rc5.d                 usb_modeswitch.conf
+egl                      logrotate.conf            rc6.d                 uuid
+environment              logrotate.d               rc.d                  vconsole.conf
+ethertypes               lsm                       rc.local              vimrc
+exports                  lvm                       rdma                  virc
+favicon.png              machine-id                redhat-release        wgetrc
+filesystems              machine-info              resolv.conf           wpa_supplicant
+firewalld                magic                     rpc                   X11
+fonts                    mail.rc                   rpm                   xdg
+fstab                    makedumpfile.conf.sample  rshim.conf            xinetd.d
+fuse.conf                man_db.conf               rsyncd.conf           xml
+gcrypt                   mft                       rsyslog.conf          yum
+gdbinit                  mke2fs.conf               rsyslog.d             yum.conf
+gdbinit.d                modprobe.d                rwtab                 yum.repos.d
+-bash-4.2$ cd ..
+-bash-4.2$ ls
+bin   data  etc   lib    lost+found  mnt  proc  run   srv  tmp  var
+boot  dev   home  lib64  media       opt  root  sbin  sys  usr
+-bash-4.2$ cd ..
+-bash-4.2$ ls
+bin   data  etc   lib    lost+found  mnt  proc  run   srv  tmp  var
+boot  dev   home  lib64  media       opt  root  sbin  sys  usr
+-bash-4.2$ cd ..
+-bash-4.2$ ls
+bin   data  etc   lib    lost+found  mnt  proc  run   srv  tmp  var
+boot  dev   home  lib64  media       opt  root  sbin  sys  usr
+-bash-4.2$ cd ...
+-bash: cd: ...: No such file or directory
+-bash-4.2$ cd usr
+-bash-4.2$ ls
+bin  etc  games  include  lib  lib64  libexec  local  mpi  sbin  share  src  tmp
+-bash-4.2$ 
+Session was closed
+Last login: Thu Sep 15 14:04:50 2022 from 36.61.134.126
+-bash-4.2$ 
+Session was closed
+Last login: Thu Sep 15 18:53:59 2022 from 36.61.134.126
+-bash-4.2$ 
+Session was closed
+Last login: Thu Sep 15 19:27:22 2022 from 220.205.233.70
+-bash-4.2$ ls
+clash  Code  d1  Git  test  test1.txt
+-bash-4.2$ cd test
+-bash-4.2$ ls
+_test1  test1.c
+-bash-4.2$ vim Makefile
+-bash-4.2$ make
+gcc test1.c -o _test1
+-bash-4.2$ ls
+Makefile  _test1  test1.c
+-bash-4.2$ ls
+Makefile  _test1  test1.c
+-bash-4.2$ rm Makefile 
+-bash-4.2$ rm _test1
+-bash-4.2$ ls
+test1.c
+-bash-4.2$ vim Makefile
+-bash-4.2$ make
+gcc test1.c -o _test1
+-bash-4.2$ ls
+Makefile  _test1  test1.c
+-bash-4.2$ vim Makefile
+-bash-4.2$ ls
+Makefile  _test1  test1.c
+-bash-4.2$ vim Makefile 
+-bash-4.2$ make clean
+rm -f _test1
+-bash-4.2$ ls
+Makefile  test1.c
+-bash-4.2$ vim Makefile 
+-bash-4.2$ vim Makefile 
+-bash-4.2$ make
+Makefile:5: *** missing separator.  Stop.
+-bash-4.2$ vim Makefile 
+-bash-4.2$ make
+make: Nothing to be done for `_test1'.
+-bash-4.2$ ls
+Makefile  test1.c
+-bash-4.2$ gcc test1.c -o _test1
+-bash-4.2$ ls
+Makefile  _test1  test1.c
+-bash-4.2$ make
+make: Nothing to be done for `_test1'.
+-bash-4.2$ vim Makefile 
+-bash-4.2$ vim Makefile ^C
+-bash-4.2$ ls
+Makefile  _test1  test1.c
+-bash-4.2$ make
+rm -f _test1
+-bash-4.2$ make _test1
+gcc test1.c -o _test1
+-bash-4.2$ ls
+Makefile  _test1  test1.c
+-bash-4.2$ make
+rm -f _test1
+-bash-4.2$ ls
+Makefile  test1.c
+-bash-4.2$ make _test1
+gcc test1.c -o _test1
+-bash-4.2$ ls
+Makefile  _test1  test1.c
+-bash-4.2$ cat Makefile 
+.PHONY : clean 
+clean:
+        rm -f _test1
+_test1 : test1.c
+        gcc test1.c -o _test1
+-bash-4.2$ vim Makefile 
+-bash-4.2$ make
+Makefile:5: *** missing separator.  Stop.
+-bash-4.2$ vim Makefile 
+-bash-4.2$ make
+make: `_test1' is up to date.
+-bash-4.2$ ls
+Makefile  _test1  test1.c
+-bash-4.2$ make
+make: `_test1' is up to date.
+-bash-4.2$ make
+make: `_test1' is up to date.
+-bash-4.2$ make
+make: `_test1' is up to date.
+-bash-4.2$ clean
+-bash: clean: command not found
+-bash-4.2$ ls
+Makefile  _test1  test1.c
+-bash-4.2$ make
+make: `_test1' is up to date.
+-bash-4.2$ make
+make: `_test1' is up to date.
+-bash-4.2$ make
+make: `_test1' is up to date.
+-bash-4.2$ make clean
+rm -f _test1 
+-bash-4.2$ make clean
+rm -f _test1 
+-bash-4.2$ make clean
+rm -f _test1 
+-bash-4.2$ ls
+Makefile  test1.c
+-bash-4.2$ ls
+Makefile  test1.c
+-bash-4.2$ make
+gcc test1.c -o _test1
+-bash-4.2$ make
+make: `_test1' is up to date.
+-bash-4.2$ make
+make: `_test1' is up to date.
+-bash-4.2$ make
+make: `_test1' is up to date.
+-bash-4.2$ make clean
+rm -f _test1 
+-bash-4.2$ ls
+Makefile  test1.c
+-bash-4.2$ make clean
+rm -f _test1 
+-bash-4.2$ ls
+Makefile  test1.c
+-bash-4.2$ 
+Session was closed
+Last login: Thu Sep 15 19:33:27 2022 from 220.205.233.186
+-bash-4.2$ 
