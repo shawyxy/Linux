@@ -1,0 +1,5 @@
+proc : proc.c
+	gcc -std=c11 proc.c -o proc 
+.PHONY : clean
+clean : 
+	rm -f proc
