@@ -1,0 +1,5 @@
+hello world <- write
+hello world <- printf
+hello world <- fputs
+hello world <- printf
+hello world <- fputs
